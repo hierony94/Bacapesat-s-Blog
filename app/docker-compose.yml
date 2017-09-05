@@ -1,0 +1,7 @@
+ghost:
+  image: ghost/1.8.1
+  name: bacapesat_blog
+  volume: /opt/ghost_blog:/var/lib/ghost/content
+  ports:
+    - "80:2368"
+  restart: always
