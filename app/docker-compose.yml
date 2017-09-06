@@ -4,6 +4,7 @@ ghost:
   volumes: 
     - /opt/ghost_blog:/var/lib/ghost/content
   environment:
+    - url=https://bacapesat.com
     - VIRTUAL_HOST=bacapesat.com
     - LETSENCRYPT_HOST=bacapesat.com
     - LETSENCRYPT_EMAIL=hieronymilanisti09@gmail.com
