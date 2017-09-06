@@ -38,6 +38,10 @@ log_format vhost '$host - $remote_user [$time_local] '
 
 access_log off;
 
+# Change Max upload file limit
+client_max_body_size 32m;
+client_body_timeout 120s; # Default is 60, May need to be increased for very large uploads
+
 {{ if (exists "/etc/nginx/proxy.conf") }}
 include /etc/nginx/proxy.conf;
 {{ else }}

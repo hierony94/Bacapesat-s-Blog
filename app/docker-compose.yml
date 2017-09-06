@@ -1,7 +1,10 @@
 ghost:
-  image: ghost/1.8.1
-  name: bacapesat_blog
-  volume: /opt/ghost_blog:/var/lib/ghost/content
-  ports:
-    - "80:2368"
+  image: ghost:1.8.1
+  container_name: bacapesat_blog
+  volumes: 
+    - /opt/ghost_blog:/var/lib/ghost/content
+  environment:
+    - VIRTUAL_HOST=bacapesat.com
+    - LETSENCRYPT_HOST=bacapesat.com
+    - LETSENCRYPT_EMAIL=hieronymilanisti09@gmail.com
   restart: always
