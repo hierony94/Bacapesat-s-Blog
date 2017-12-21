@@ -3,6 +3,10 @@ ghost:
   container_name: bacapesat_blog
   volumes: 
     - /opt/ghost_blog:/var/lib/ghost/content
+  log_driver: json-file
+  log_opt:
+    max-size: "150m"
+    max-file: "3"
   environment:
     - url=https://bacapesat.com
     - VIRTUAL_HOST=bacapesat.com
