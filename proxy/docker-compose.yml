@@ -20,7 +20,7 @@ gen:
   restart: always
 
 le:
-  image: alastaircoote/docker-letsencrypt-nginx-proxy-companion
+  image: jrcs/letsencrypt-nginx-proxy-companion
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock:ro
     - ./opt/certs:/etc/nginx/certs:rw
