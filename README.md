@@ -15,17 +15,19 @@ You can see the detail for each in:
 - docker-compose : [https://github.com/docker/compose/releases](https://github.com/docker/compose/releases)
 
 ## Run Instructions
-1. Move to proxy folder by run `cd proxy` and then run letsencrypt nginx proxy container using docker-compose
+1. Clone the repository `git clone https://github.com/HieronyM/Bacapesat-s-Blog.git`
+
+2. Move to proxy folder by run `cd proxy` and then run letsencrypt nginx proxy container using docker-compose
 ```bash
 docker-compose build && docker-compose up -d
 ```
 
-2. Move to app folder by run `cd app` and then run the ghost app container using docker-compose
+3. Move to app folder by run `cd app` and then run the ghost app container using docker-compose
 ```bash
 docker-compose build && docker-compose up -d
 ```
 
-3. Finish
+4. Finish
 
 ## Notes
 
